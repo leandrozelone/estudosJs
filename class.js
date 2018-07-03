@@ -14,13 +14,27 @@ function makePerson(first, last) {
 s = makePerson('Carlos', 'Felipe');
 // console.log(s.fullNameReversed());
 
-function Pessoa(nome, cpf, telefone) {
-  this.nome = nome;
-  this.cpf = cpf;
-  this.telefone = telefone;
+//construção de uma classe em JS antigo
+// function Pessoa(nome, cpf, telefone) {
+//   this.nome = nome;
+//   this.cpf = cpf;
+//   this.telefone = telefone;
+// }
+
+//construção de classe no ES2015 
+class Pessoa {
+  constructor(nome, cpf, telefone) {
+    this.nome = nome;
+    this.cpf = cpf;
+    this.telefone = telefone;
+  }
 }
 
-let pessoa = new Pessoa()
+let pessoa = new Pessoa();
+pessoa.nome = "carlota joaquina";
+pessoa.cpf = "054.309.409-09"
+
+
 
 function Person(first, last) {
   this.first = first;
