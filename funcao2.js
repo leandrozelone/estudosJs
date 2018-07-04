@@ -28,3 +28,14 @@ imprimirSoma4(13123)
 const somar = (a, b) => a + b
 const resultado = somar(2, 3) //utilizando o resultade uma função em uma constante
 console.log(resultado)
+
+function avg() {
+    var sum = 0;
+    for (var i = 0, j = arguments.length; i < j; i++) {
+        sum += arguments[i];
+    }
+    return sum / arguments.length;
+}
+
+var media = avg(2, 2);
+console.log(media);
