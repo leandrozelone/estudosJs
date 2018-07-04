@@ -26,3 +26,16 @@ function add() {
 
 somaTotal = add(3, 5, 10);
 console.log(somaTotal);
+
+
+/** Funções anônimas */
+//as funções anônimas são geralmente utilizadas para armazenar valores em variáveis
+var minhaVariavelFuncao = function() {
+  //codigo
+}
+//podemos também passar parâmetros
+var minhaVariavelFuncao2 = function(a, b, c) {
+  return a + b + c
+}
+
+console.log(minhaVariavelFuncao2(2, 2, 2))
